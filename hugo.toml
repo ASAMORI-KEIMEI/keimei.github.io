@@ -1,38 +1,43 @@
 baseURL = 'https://keimei-skizzen.org/'  # 这里写你的自定义域名
 languageCode = 'zh-cn'
+defaultContentLanguage = 'zh'
 title = 'Keimei Skizzen' # 你的博客标题
 theme = 'PaperMod'
 
 [params]
     env = "production"
     title = "Keimei Skizzen"
-    description = "关于哲学的随笔与思考"
+    description = "旭森景明の場所"
     author = "ASAMORI KEIMEI"
-    
-    # 首页配置
-    [params.homeInfoParams]
-        Title = "旭森景明の場所"
-        Content = "欢迎来到我的场所。这里记录着关于生活，哲学与观察的一些巧思。"
+
+    # 1. 核心显示模式
+    [params.profileMode]
+        enabled = true
+        title = "旭森景明の場所"
+        subtitle = "记录生活，哲学，洞见和感悟。"
+        displayFullContent = false
+
+    # 2. 社交图标
     [[params.socialIcons]]
         name = "github"
         url = "https://github.com/ASAMORI-KEIMEI"
     [[params.socialIcons]]
         name = "email"
-        url = "mailto:contact@keimei-skizzen.org "
-    # 菜单配置
-    [[menu.main]]
-        identifier = "posts"
-        name = "文章"
-        url = "/posts/"
-        weight = 10
-    [[menu.main]]
-        identifier = "categories"
-        name = "分类"
-        url = "/categories/"
-        weight = 20
+        url = "mailto:contact@keimei-skizzen.org"
 
-    [[menu.main]]
-        identifier = "tags"
-        name = "标签"
-        url = "/tags/"
-        weight = 30
+# 3. 菜单配置
+[[menu.main]]
+    identifier = "posts"
+    name = "ARCHIV | 归档"
+    url = "/posts/"
+    weight = 10
+[[menu.main]]
+    identifier = "categories"
+    name = "KATEGORIEN | 分类"
+    url = "/categories/"
+    weight = 20
+[[menu.main]]
+    identifier = "tags"
+    name = "SCHLAGWORTE | 标签"
+    url = "/tags/"
+    weight = 30

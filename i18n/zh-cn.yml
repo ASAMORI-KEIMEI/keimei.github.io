@@ -1,0 +1,17 @@
+- id: categories
+  translation: "KATEGORIEN 分类"
+
+- id: tags
+  translation: "SCHLAGWORTE 标签"
+
+- id: read_more
+  translation: "WEITERLESEN 阅读全文"
+
+- id: words
+  translation: "字"
+
+- id: prev_page
+  translation: "ZURÜCK 上一页"
+
+- id: next_page
+  translation: "WEITER 下一页"
