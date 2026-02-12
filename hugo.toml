@@ -1,0 +1,22 @@
+baseURL = 'https://keimei-skizzen.org/'  # 这里写你的自定义域名
+languageCode = 'zh-cn'
+title = 'Keimei Skizzen' # 你的博客标题
+theme = 'PaperMod'
+
+[params]
+    env = "production"
+    title = "Keimei Skizzen"
+    description = "关于哲学的随笔与思考"
+    author = "ASAMORI KEIMEI"
+    
+    # 首页配置
+    [params.homeInfoParams]
+        Title = "思维的速写"
+        Content = "欢迎来到我的哲学空间。这里记录着关于存在、伦理与逻辑的点滴思考。"
+
+    # 菜单配置
+    [[menu.main]]
+        identifier = "posts"
+        name = "文章"
+        url = "/posts/"
+        weight = 10
